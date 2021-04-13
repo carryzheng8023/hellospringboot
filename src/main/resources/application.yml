@@ -1,0 +1,41 @@
+spring:
+  profiles:
+    active: dev
+---
+
+server:
+  port: 12306
+spring:
+  profiles: dev
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+
+# 开启springBoot的debug模式
+#debug: true
+
+---
+server:
+  port: 8082
+spring:
+  profiles: prod
+
+
+
+
+
+
+#person:
+#  age: 18
+#  boss: false
+#  birth: 2017/5/22
+#  email: xx@xx.com
+#  map: {k1: v1,k2: 12}
+#  list:
+#    - lisi
+#    - zhaoliu
+#  dog:
+#    name: 小狗
+#    age: 2
+#  last-name: zx
