@@ -5,6 +5,11 @@ spring:
 
 server:
   port: 12306
+  ssl:
+    key-store: xxx.jks
+    key-store-password: 123456
+    key-store-type: JKS
+    key-alias: alias
 spring:
   profiles: dev
   http:
